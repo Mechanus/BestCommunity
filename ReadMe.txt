@@ -1,6 +1,6 @@
 This program is ran using Node JS. 
 
-Before running this program, you must npm install express
+Before running this program, you must npm install express and pug
 
 This program may be run from the command prompt by typing in "node Server.js" in the root folder.
 
