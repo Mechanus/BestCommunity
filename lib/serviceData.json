@@ -1,0 +1,96 @@
+{
+  "bRental": [
+    {
+      "date": "22419",
+      "id": 1,
+      "rType": "Wedding",
+      "timeS": 800,
+      "timeE": 1200,
+      "userId": 1,
+      "rentals": "y",
+      "catering": "y"
+    },
+    {
+      "date": "22419",
+      "id": 2,
+      "rType": "Meeting",
+      "timeS": 1300,
+      "timeE": 1500,
+      "userId": 1,
+      "rentals": "n",
+      "catering": "y"
+    },
+    {
+      "date": "22519",
+      "id": 3,
+      "rType": "Funeral",
+      "timeS": 1200,
+      "timeE": 1500,
+      "userId": 1,
+      "rentals": "n",
+      "catering": "n"
+    },
+    {
+      "date": "22419",
+      "rType": "Wedding",
+      "timeS": "1200",
+      "timeE": "1300",
+      "rentals": "yesR",
+      "catering": "yesC",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "date": "22419",
+      "rType": "Wedding",
+      "timeS": "800",
+      "timeE": "900",
+      "rentals": "yesR",
+      "catering": "yesC",
+      "userId": 1,
+      "id": 5
+    }
+  ],
+  "activity": [
+    {
+      "date": "22619",
+      "timeS": 1600,
+      "timeE": 1700,
+      "id": "4",
+      "aType": "Paint Night",
+      "available": 0
+    },
+    {
+      "date": "22819",
+      "timeS": 1600,
+      "timeE": 1700,
+      "id": "5",
+      "aType": "Spanish lessons",
+      "available": 20
+    },
+    {
+      "date": "30519",
+      "timeS": 1600,
+      "timeE": 1700,
+      "id": "6",
+      "aType": "Spanish lessons",
+      "available": 30
+    }
+  ],
+  "wellness": [
+    {
+      "date": "30519",
+      "timeS": 800,
+      "timeE": 900,
+      "id": "7",
+      "userId": 1
+    },
+    {
+      "date": "22419",
+      "timeS": "800",
+      "timeE": "900",
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}

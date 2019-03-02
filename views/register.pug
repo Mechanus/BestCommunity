@@ -1,0 +1,32 @@
+doctype html
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  style.
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+.hero-image
+  .hero-text
+    center
+      h1(style='font-size:50px') #{header}
+center
+  form(action='/regCheck' method='POST')
+    input(type='text' name='userName' placeholder='Enter Username')
+    br
+    br
+    input(type='password' name='psw' placeholder='Enter Password')
+    br
+    br
+    input(type='password' name='psw1' placeholder='Verify Password')
+    br
+    br
+    br
+    input(type='text' name='fName' placeholder='First Name')
+    br
+    br
+    input(type='text' name='lName' placeholder='Last Name')
+    br
+    br
+    input(type='text' name='pNumber' placeholder='1234567890')
+    br
+    br
+    input(type='submit' value='submit' method='post')

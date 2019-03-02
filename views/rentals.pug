@@ -1,0 +1,124 @@
+doctype html
+head
+    style.
+        #services {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+        #services td,
+        #services th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+        #services tr:nth-child(even) {
+        background-color: #f2f2f2;
+        }
+        #services tr:hover {
+        background-color: #ddd;
+        }
+        #services th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+        }
+        .divider{
+            width:5px;
+            height:auto;
+            display:inline-block;
+        }
+h1 #{display}
+h2 Scheduled Rentals
+form(action='/rentCheck' method='POST')
+    label(for='date') Date: 
+    select#Date(name='date')
+      option(value=22419) 2/24/19
+      option(value=22519) 2/25/19
+      option(value=22619) 2/26/19
+      option(value=22719) 2/27/19
+
+    .divider
+    label(for='rType') Type: 
+    select#Type(name='rType')
+      option(value='Wedding') Wedding
+      option(value='Meeting') Meeting
+      option(value='Funeral') Funeral 
+
+    .divider
+    label(for='timeS') Start: 
+    select#Start(name='timeS')
+      option(value='800') 800
+      option(value='900') 900
+      option(value='1000') 1000
+      option(value='1100') 1100
+      option(value='1200') 1200
+      option(value='1300') 1300
+      option(value='1400') 1400
+      option(value='1500') 1500
+      option(value='1600') 1600
+      option(value='1700') 1700
+
+    .divider
+    label(for='timeE') End: 
+    select#End(name='timeE')
+      option(value='900') 900
+      option(value='1000') 1000
+      option(value='1100') 1100
+      option(value='1200') 1200
+      option(value='1300') 1300
+      option(value='1400') 1400
+      option(value='1500') 1500
+      option(value='1600') 1600
+      option(value='1700') 1700
+      option(value='1800') 1800
+
+    .divider
+    label(for='rentals') Rentals: 
+    select#Rentals(name='rentals')
+      option(value='yesR') Yes
+      option(value='noR') No
+
+    .divider
+    label(for='catering') Catering: 
+    select#Catering(name='catering')
+      option(value='yesC') Yes
+      option(value='noC') No
+
+	  
+	  
+    .divider
+    .divider
+    .divider
+    input(type='submit' value='Submit' method='post')
+table#services
+    tbody
+        tr
+            th Date 
+            th Type 
+            th Start
+            th End			
+        each service in result
+            tr
+                td=service.date
+                td=service.rType
+                td=service.timeS
+                td=service.timeE
+br
+br
+br
+h3 Scheduled Activities
+table#services
+    tbody
+        tr
+            th Date 
+            th Type 
+            th Start
+            th End			
+        each service in activity
+            tr
+                td=service.date
+                td=service.aType
+                td=service.timeS
+                td=service.timeE
