@@ -1,3 +1,5 @@
+This program is ran using Node JS. 
+
 Before running this program, you must npm install express
 
 This program may be run from the command prompt by typing in "node Server.js" in the root folder.
